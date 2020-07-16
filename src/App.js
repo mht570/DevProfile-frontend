@@ -1,9 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import MainPage from "./Components/pages comp/MainPage/mainPage";
 
 function App() {
-  return <div className="App">Learn React</div>;
+  return (
+    <div>
+      <MainPage />
+    </div>
+  );
 }
 
 export default App;
