@@ -44,7 +44,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Login({ handleclick }) {
+export default function Signup({ handleclick }) {
   const [open, setOpen] = React.useState(true);
   const [showPassword, setShow] = React.useState(false);
   const theme = useTheme();
@@ -96,7 +96,7 @@ export default function Login({ handleclick }) {
             <Grid item xs={12}>
               <Grid container justify="center">
                 <h1 className="login_title">
-                  Enter your email and password to login
+                  Enter your email and create a password
                 </h1>
               </Grid>
             </Grid>
@@ -162,9 +162,48 @@ export default function Login({ handleclick }) {
             </Grid>
           </Grid>
           <br />
+          <Grid container justify="center" spacing={4}>
+            <Grid item>
+              <FormControl variant="outlined" style={{ color: "green" }}>
+                {/* <InputLabel htmlFor="outlined-adornment-password">
+                  Password
+                </InputLabel> */}
+
+                <TextField
+                  id="filled-password-input"
+                  label="Confirm password"
+                  type={showPassword ? "text" : "password"}
+                  autoComplete="current-password"
+                  variant="outlined"
+                  className="login-filed"
+                  InputLabelProps={{
+                    className: classes.loginfiled,
+                  }}
+                  InputProps={{
+                    classes: {
+                      notchedOutline: classes.loginfiled,
+                    },
+                    endAdornment: (
+                      <InputAdornment position="end">
+                        <IconButton
+                          aria-label="toggle password visibility"
+                          onClick={handleClickShowPassword}
+                          onMouseDown={handleMouseDownPassword}
+                          edge="end"
+                        >
+                          {showPassword ? <Visibility /> : <VisibilityOff />}
+                        </IconButton>
+                      </InputAdornment>
+                    ),
+                  }}
+                />
+              </FormControl>
+            </Grid>
+          </Grid>
+          <br />
           <Grid container justify="center">
             <Button className={classes.root} onClick={handleClose}>
-              Login
+              SignUp
             </Button>
           </Grid>
         </DialogContent>

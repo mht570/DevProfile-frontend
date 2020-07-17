@@ -1,5 +1,7 @@
 import NavBar from "./../../shared comp/navbar";
-import React from "react";
+import Login from "./../../shared comp/login";
+import Signup from "./../../shared comp/signup";
+import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper, Grid } from "@material-ui/core";
 
@@ -18,6 +20,7 @@ const styles = {
 };
 
 export default function MainPage() {
+  const [log, setLog] = useState(false);
   return (
     <div>
       <NavBar />

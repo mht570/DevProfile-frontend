@@ -10,6 +10,9 @@
   height: 50px;
 }
 
+.MuiOutlinedInput-notchedOutline {
+  color: #388e3c;
+}
 .title {
   font-family: Poppins;
   font-weight: 600;

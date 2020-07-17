@@ -1,0 +1,42 @@
+.login_text {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: #388e3c;
+}
+.login_title {
+  font-family: Poppins;
+  margin-top: -10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #8bc34a;
+}
+.login-filed {
+  width: 40vw;
+}
+.MuiOutlinedInput-notchedOutline {
+  color: yellow !important;
+}
+.MuiInputBase-input {
+  color: red;
+  border-color: red !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .login_text {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 19px;
+    color: #1b5e20;
+  }
+  .login-filed {
+    width: 80vw;
+  }
+  .login_title {
+    font-family: Poppins;
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #8bc34a;
+  }
+}
